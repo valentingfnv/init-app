@@ -3,7 +3,13 @@
   --second-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 	--font-size-p: calc(12px + 2 * (100vw / 1200));
 	--font-size-h1: calc(16px + 10 * (100vw / 1200));
+	--font-size-h3: calc(14px + 6 * (100vw / 1200));
 	--font-size-link: calc(12px + 6 * (100vw / 1200));
+
+	--main-bgc: #1B2027;
+	--second-bgc: rgba(248, 246, 245, 0.7);
+	--second-color: #8097a1;
+
 }
 
 @font-face {
@@ -80,13 +86,36 @@
 
 body {
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  background-image: url(./img/main-background.png);
   
 }
 
 h1 {
     font-size: var(--font-size-h1);
     font-family: 'Montserrat';
+	margin: 0;
+}
+
+h3 {
+	font-size: var(--font-size-h3);
+	font-family: 'Quicksand';
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+	line-height: 1.5em;
+	font-size: var(--font-size-p);
+	font-family: 'Quicksand';
+}
+
+a {
+	text-decoration: none;
+	
 }
 
 

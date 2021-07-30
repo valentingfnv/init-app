@@ -1,0 +1,8 @@
+.container {
+    width: 100%;
+    height: 30vh;
+    background-color: var(--second-bgc);
+    border-radius: 3px;
+
+    box-shadow: var(--main-box-shadow);
+}
