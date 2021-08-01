@@ -15,9 +15,10 @@ let mainSkillsItem = [
 
 let secondSkillsItem = [
   {id:1 , name:'React.JS'},
-  {id:2 , name:'Django'},
-  {id:3 , name:'LESS, SCSS'},
-  {id:4 , name:'GIT'}
+  {id:2 , name:'Node.JS'},
+  {id:3 , name:'Django'},
+  {id:4 , name:'LESS, SCSS'},
+  {id:5 , name:'GIT'}
 ]
 
 let contactsItem = [

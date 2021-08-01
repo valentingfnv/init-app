@@ -1,6 +1,6 @@
 import React from "react";
 
-import singin from "./singin.module.css";
+import styles from "./singin.module.css";
 import TextInput from "../microCopmonents/TextInput";
 import MainButton from "../microCopmonents/MainButton";
 
@@ -9,14 +9,14 @@ import Logo from "../microCopmonents/Logo";
 
 const Singin = (props) => {
   return (
-    <div className={singin.container}>
-      <div className={singin.title}>
+    <div className={styles.container}>
+      <div className={styles.title}>
         <div><Logo /></div>
         <h2>Sign in or create an account</h2>
       </div>
 
-      <div className={singin.content}>
-        <div className={singin.textField}>
+      <div className={styles.content}>
+        <div className={styles.textField}>
           <div>
             <h1>Sing in</h1>
             <p>
@@ -24,12 +24,12 @@ const Singin = (props) => {
             </p>
           </div>
 
-           <form className={singin.formSingin} action="">
+           <form className={styles.formSingin} action="">
             <TextInput label="email address" type="text" />
             <TextInput label="password" type="password" />
             <MainButton label="CONTINUE" />
           </form>
-          <div className={singin.smallText}>
+          <div className={styles.smallText}>
             Protected by reCAPTCHA and subject to the Google Privacy Policy and
             Terms of Service.
           </div>

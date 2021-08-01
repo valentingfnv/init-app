@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Singin from "./components/singin/Singin";
 import Checkin from "./components/checkin/Checkin";
 
-function App(props) {
+function App({mainSkillsItem, secondSkillsItem, contactsItem}) {
   return (
     <Router>
       <div>
@@ -17,7 +17,7 @@ function App(props) {
       <div className='container'>
         <Switch>
           <Route path="/profile">
-            <Profile mainSkillsItem={props.mainSkillsItem} secondSkillsItem={props.secondSkillsItem} contactsItem={props.contactsItem}/>
+            <Profile mainSkillsItem={mainSkillsItem} secondSkillsItem={secondSkillsItem} contactsItem={contactsItem}/>
           </Route>
           <Route path="/singin">
             <Singin />

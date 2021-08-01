@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    background-color: var(--second-bgc);
+    background-color: var(--main-bgc);
     border-radius: 3px;
     box-shadow: var(--main-box-shadow);
     display: flex;

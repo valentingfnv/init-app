@@ -100,6 +100,12 @@ h1 {
 h3 {
 	font-size: var(--font-size-h3);
 	font-family: 'Quicksand';
+	
+}
+
+p {
+	font-size: var(--font-size-p);
+	font-family: 'Quicksand';
 }
 
 ul {
