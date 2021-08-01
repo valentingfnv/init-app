@@ -1,0 +1,86 @@
+.container {
+    width: 60%;
+    font-family: 'helveticaneuecyr-light', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    
+}
+
+.title {
+    width: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.content {
+    width: 50%;
+    height: 82vh;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    
+    box-shadow: var(--main-box-shadow);
+}
+
+.textField {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textField a {
+    color: rgb(82, 100, 174);
+}
+
+.formSingin {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.smallText {
+    font-size: 12px;
+    color: gray;
+}
+
+.logoTitle {
+    width: 200px;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: var(--main-box-shadow);
+    font-family: 'Conv_2-Questa_Grande_Regular';
+    font-size: var(--font-size-h1);
+    text-align: center;
+    
+    
+    background-color: rgba(1,1,1,0.2);
+}
+
+@media screen and (max-device-width: 500px) {
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .title {
+        display: none;
+    }
+
+    .content {
+        width: 95%;
+        height: 80vh;
+        
+    }
+}
