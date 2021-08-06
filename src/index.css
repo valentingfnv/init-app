@@ -100,7 +100,7 @@ h1 {
 h3 {
 	font-size: var(--font-size-h3);
 	font-family: 'Quicksand';
-	
+	margin: 0;
 }
 
 p {

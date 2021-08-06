@@ -13,8 +13,21 @@ function Header() {
         </NavLink>
       </div>
       <div className={styles.links}>
-        <NavLink to="/singin"><h3>sing<span>In</span></h3></NavLink>
-        <NavLink to="checkin"><h3>check<span>In</span></h3></NavLink>
+        <NavLink to="/edit">
+          <h3>
+            ed<span>It</span>
+          </h3>
+        </NavLink>
+        <NavLink to="/singin">
+          <h3>
+            sing<span>In</span>
+          </h3>
+        </NavLink>
+        <NavLink to="/checkin">
+          <h3>
+            check<span>In</span>
+          </h3>
+        </NavLink>
       </div>
     </header>
   );

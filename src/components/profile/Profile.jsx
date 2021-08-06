@@ -11,17 +11,17 @@ import LastJob from "./rightBar/lastJob/LastJob";
 import Projects from "./rightBar/projects/Projects";
 import About from "./rightBar/about/About";
 
-function Profile({mainSkillsItem, secondSkillsItem, contactsItem}) {
+function Profile({state}) {
   return (
     <div className={styles.container}>
       <div className={styles.leftBar}>
-        <Title />
+        <Title title={state.title} />
         <Avatar />
         <Skills
-          mainSkillsItem={mainSkillsItem}
-          secondSkillsItem={secondSkillsItem}
+          mainSkillsItem={state.mainSkillsItem}
+          secondSkillsItem={state.secondSkillsItem}
         />
-        <Contacts contactsItem={contactsItem} />
+        <Contacts contactsItem={state.contactsItem} />
       </div>
       <div className={styles.rightBar}>
         <LastJob />

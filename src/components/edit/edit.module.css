@@ -1,0 +1,46 @@
+.container {
+    width: 50%;
+    /* min-height: 80vh; */
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--second-color);
+
+    border-radius: 5px;
+    box-shadow: var(--main-box-shadow);
+    margin: 20px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+
+    padding: 20px 0;
+
+
+}
+
+.title {
+    width: 80%;
+    background-color: var(--main-bgc);
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.titleMain {
+    width: 40%;
+    padding: 20px;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+
+@media screen and (max-device-width: 500px) {
+    .container {
+        width: 95%;
+
+    }
+}

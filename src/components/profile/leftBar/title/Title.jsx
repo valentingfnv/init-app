@@ -2,11 +2,12 @@ import React from 'react'
 import styles from './title.module.css'
 
 
-export default function Title () {
+export default function Title ({title}) {
     return (
+        
         <div className={styles.container}>
-            <h3>Agafonov Valentin</h3>
-            <p>FrontEnd devoloper</p>
+            <h3>{title.name}</h3>
+            <p>{title.post}</p>
         </div>
     )
 }
