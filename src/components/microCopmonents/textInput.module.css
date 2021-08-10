@@ -1,12 +1,13 @@
 
 .textField {
+    font-size: var(--font-size-p);
     position: relative;
     margin-bottom: 20px;
     font-family: 'Quicksand';
 }
   
 input {
-    font-size: 16px;
+    font-size: var(--font-size-p);
 
     display: block;
     width: 100%;
@@ -26,7 +27,7 @@ label {
     position: absolute;
     pointer-events: none;
     left: 0px;
-    top: 2px;
+    top: -2px;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
     -webkit-transition: 0.2s ease all;

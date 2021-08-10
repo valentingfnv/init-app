@@ -2,36 +2,36 @@ const EDIT_TITLE = 'EDIT-TITLE'
 const ADD_SKILLS = 'ADD-SKILLS'
 
 
-// let initialState = {
-//     mainSkillsItem : [
-//       {id:1 , name:'JavaScript'},
-//       {id:2 , name:'Python'},
-//       {id:3 , name:'HTML'},
-//       {id:4 , name:'CSS'}
+let initialState = {
+    mainSkillsItem : [
+      {id:1 , name:'JavaScript'},
+      {id:2 , name:'Python'},
+      {id:3 , name:'HTML'},
+      {id:4 , name:'CSS'}
       
-//     ],
+    ],
     
-//   secondSkillsItem : [
-//       {id:1 , name:'React.JS'},
-//       {id:2 , name:'Node.JS'},
-//       {id:3 , name:'Django'},
-//       {id:4 , name:'LESS, SCSS'},
-//       {id:5 , name:'GIT'}
-//     ],
+  secondSkillsItem : [
+      {id:1 , name:'React.JS'},
+      {id:2 , name:'Node.JS'},
+      {id:3 , name:'Django'},
+      {id:4 , name:'LESS, SCSS'},
+      {id:5 , name:'GIT'}
+    ],
     
-//     contactsItem : [
-//       {id:1, name:'phone', value:'89287634105' },
-//       {id:2, name:'mail', value:'valentingfnv@yandex.ru' },
-//       {id:3, name:'telegram', value:'@valentingfnv' }
-//     ],
+    contactsItem : [
+      {id:1, name:'phone', value:'89287634105' },
+      {id:2, name:'mail', value:'valentingfnv@yandex.ru' },
+      {id:3, name:'telegram', value:'@valentingfnv' }
+    ],
 
-//     title : {
-//       name : '',
-//       post : ''
-//     }
-//   }
+    title : {
+      name : '',
+      post : ''
+    }
+  }
 
- const profileReducer = (state, action) => {
+ const profileReducer = (state = initialState, action) => {
      switch (action.type) {
          case EDIT_TITLE:
             state.title.name = action.name

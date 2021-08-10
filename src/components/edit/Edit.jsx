@@ -12,7 +12,7 @@ export default function Edit({ dispatch }) {
   let inputPost = React.createRef();
   let inputSkills = React.createRef();
 
-  let saveData = () => {
+  let addName = () => {
     let newName = inputName.current.value;
     let newPost = inputPost.current.value;
     dispatch(editTitleActionCreator(newName, newPost));
@@ -42,7 +42,7 @@ export default function Edit({ dispatch }) {
       >
         <TextInput refs={inputName} label="name" type="text" />
         <TextInput refs={inputPost} label="post" type="text" />
-        <MainButton onClick={saveData} label="SAVE" />
+        <MainButton onClick={addName} label="SAVE" />
       </div>
       <div className={styles.title} onClick={() => setOpen(!open)}>
         <h3>skills</h3>

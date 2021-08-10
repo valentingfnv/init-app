@@ -8,22 +8,22 @@ function Header() {
   return (
     <header className={styles.container}>
       <div>
-        <NavLink to="/profile">
+        <NavLink to="/profile" activeClassName={styles.active}>
           <Logo />
         </NavLink>
       </div>
       <div className={styles.links}>
-        <NavLink to="/edit">
+        <NavLink to="/edit" activeClassName={styles.active}>
           <h3>
             ed<span>It</span>
           </h3>
         </NavLink>
-        <NavLink to="/singin">
+        <NavLink to="/singin" activeClassName={styles.active}>
           <h3>
             sing<span>In</span>
           </h3>
         </NavLink>
-        <NavLink to="/checkin">
+        <NavLink to="/checkin" activeClassName={styles.active}>
           <h3>
             check<span>In</span>
           </h3>

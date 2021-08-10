@@ -22,3 +22,8 @@
     
 }
 
+.active span{
+    background-color: var(--main-bgc);
+    color: var(--second-color);
+}
+
