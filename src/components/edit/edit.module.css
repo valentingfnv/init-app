@@ -1,8 +1,6 @@
 .container {
     width: 50%;
-    /* min-height: 80vh; */
     background-color: rgba(255, 255, 255, 0.5);
-    color: var(--second-color);
 
     border-radius: 5px;
     box-shadow: var(--main-box-shadow);
@@ -12,6 +10,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
     gap: 2px;
 
     padding: 20px 0;
@@ -19,24 +18,33 @@
 
 }
 
-.title {
-    width: 80%;
-    background-color: var(--main-bgc);
-    border-radius: 5px;
-    padding: 5px;
-    cursor: pointer;
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+    border-bottom-color: var(--main-bgc);
 }
 
-.titleMain {
-    width: 40%;
-    padding: 20px;
-    display: none;
+.container a {
+    font-size: var(--font-size-link);
+    font-family: 'Quicksand';
+    
+    
+
 }
 
-.open {
-    display: block;
+.active {
+    color: var(--main-bgc);
+    border-bottom: 2px solid;
+    border-bottom-color: var(--main-bgc);
 }
 
+.content {
+    width: 100%;
+    height: 75vh;
+    display: flex; 
+}
 
 @media screen and (max-device-width: 500px) {
     .container {
