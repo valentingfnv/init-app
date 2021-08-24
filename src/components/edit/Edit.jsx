@@ -2,20 +2,21 @@ import React from "react";
 import { NavLink, Route, Switch } from "react-router-dom";
 import styles from "./edit.module.css";
 
-import NameEdit from './EditComponent/NameEdit'
 import AvatarEdit from './EditComponent/AvatarEdit'
 import SkillsEdit from './EditComponent/SkillsEdit'
 import ContactsEdit from './EditComponent/ContactsEdit'
 import JobEdit from './EditComponent/JobEdit'
 import ProjectsEdit from './EditComponent/ProjectsEdit'
 import AboutEdit from './EditComponent/AboutEdit'
+import NameEditContainer from "./EditComponent/NameEdit/NameEditContainer";
 
 
-export default function Edit({ addName, addSkills }) {
 
 
-  // let inputName = React.createRef();
-  // let inputPost = React.createRef();
+export default function Edit() {
+
+
+
   // let inputSkills = React.createRef();
 
   // let onAddName = () => {
@@ -34,8 +35,6 @@ export default function Edit({ addName, addSkills }) {
   // }
 
 
-
-
   return (
     <div className={styles.container}>
       <div className={styles.links}>
@@ -50,7 +49,7 @@ export default function Edit({ addName, addSkills }) {
       <div className={styles.content}>
           <Switch>
             <Route path='/name'>
-              <NameEdit />
+              <NameEditContainer />
             </Route>
             <Route path='/avatar'>
               <AvatarEdit />
@@ -71,7 +70,7 @@ export default function Edit({ addName, addSkills }) {
               <AboutEdit />
             </Route>
           </Switch>
-        </div>      
+        </div>
     </div>
  
   );

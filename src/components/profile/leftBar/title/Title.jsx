@@ -6,8 +6,8 @@ export default function Title ({title}) {
     return (
         
         <div className={styles.container}>
-            <h3>{title.name}</h3>
-            <p>{title.post}</p>
+            <h3>{title.firstName} {title.lastName}</h3>
+            <p>{title.position}</p>
         </div>
     )
 }

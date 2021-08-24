@@ -1,10 +1,11 @@
 :root {
 	--main-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
   --second-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-	--font-size-p: calc(12px + 2 * (100vw / 1200));
+	--font-size-p: calc(10px + 4 * (100vw / 1200));
 	--font-size-h1: calc(16px + 10 * (100vw / 1200));
 	--font-size-h3: calc(14px + 6 * (100vw / 1200));
-	--font-size-link: calc(10px + 8 * (100vw / 1200));
+	--font-size-h4: calc(12px + 4 * (100vw / 1200));
+	--font-size-link: calc(12px + 6 * (100vw / 1200));
 
 	--main-bgc: rgb(27, 32, 39);
 	--second-bgc: rgba(248, 246, 245, 0.7);
@@ -101,6 +102,11 @@ h3 {
 	font-size: var(--font-size-h3);
 	font-family: 'Quicksand';
 	margin: 0;
+}
+
+h4 {
+	font-family: 'Montserrat';
+	font-size: var(--font-size-h4);
 }
 
 p {

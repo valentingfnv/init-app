@@ -18,3 +18,9 @@
     padding: 2px;
 }
 
+
+@media screen and (max-device-width: 500px) {
+    .links {
+        width: 50%;
+    }
+}

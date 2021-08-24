@@ -1,20 +1,26 @@
 import { connect } from "react-redux";
-import {
-  editTitleActionCreator,
-  addSkillsActionCreator,
-} from "../../redux/profileReducer";
+import { editTitleFirstNameActionCreator,
+          editTitleLastNameActionCreator,
+          editTitlePositionActionCreator } from "../../redux/profileReducer";
+
 import Edit from "./Edit";
+
+function mapStateToProps(state) {
+  return {
+    title: state.profilePage.title,
+  }
+
+}
 
 function mapDispatchToProps(dispatch) {
   return {
-    addName: (newName, newPost) => {
-      return dispatch(editTitleActionCreator(newName, newPost));
-    },
-
-    addSkills: (newSkills) => dispatch(addSkillsActionCreator(newSkills)),
+    editFirstName: (newFirstName) => dispatch(editTitleFirstNameActionCreator(newFirstName)),
+    editLastName: (newLastName) => dispatch(editTitleLastNameActionCreator(newLastName)),
+    editPositionName: (newPosition) => dispatch(editTitlePositionActionCreator(newPosition)),
+    addSkills: (newSkills) => dispatch(newSkills),
   };
 }
 
-const EditContainer = connect(null, mapDispatchToProps)(Edit);
+const EditContainer = connect(mapStateToProps, mapDispatchToProps)(Edit);
 
 export default EditContainer;

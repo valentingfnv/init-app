@@ -23,7 +23,7 @@ input:focus {
 
 label {
     color: #999;
-    font-size: 16px;
+    font-size: var(--font-size-p);
     position: absolute;
     pointer-events: none;
     left: 0px;
@@ -37,7 +37,7 @@ label {
 input:focus ~ label, 
 input:valid ~ label {
     top: -17px;
-    font-size: 12px;
+    font-size: 10px;
     color: #5264AE;
 }
 
